@@ -1,0 +1,608 @@
+* {
+    outline: 1px solid #00f;
+}
+
+.slick-track,
+.slick-list {
+    transition-delay: 0.03s;
+}
+
+.header h1 {
+    font-size: 0;
+    /* margin: auto; */
+}
+
+/* .header .inner img {
+    height: 100%;
+} */
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 100px;
+    background: #fefefe;
+}
+
+.header .gnb {
+    margin: 0 100px;
+    width: 100%;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 30px;
+
+}
+
+.header .gnb>ul>li {
+    position: relative;
+
+}
+
+.header .gnb>ul>li a:hover {
+    color: #000;
+    font-weight: 500;
+}
+
+.header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0, -40%);
+
+    width: 1px;
+    height: 12px;
+    background: #999;
+}
+
+.header .gnb>ul>a {
+    display: block;
+}
+
+.header .right {
+    position: relative;
+    margin: 0 0 0 auto;
+}
+
+.header .right input {
+    width: 0 auto;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.header .right .xi-search {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(0, 10%);
+}
+
+/* .header .right a {
+    margin: 0 0 0 auto;
+} */
+
+.mainVisual .mainSlide figure {
+    position: relative;
+    height: 600px;
+}
+
+.mainVisual .mainSlide .slide01 {
+    background: url(../img/main_slider01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .slide02 {
+    background: url(../img/main_slider03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .slide03 {
+    background: url(../img/main_slider02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1200px;
+}
+
+.mainVisual .mainSlide .slick-dots {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainVisual .mainSlide .slick-dots>li {
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    background: #f9f9f9;
+    margin: 0 10px;
+    /* border-radius: 10%; */
+    /* border: 2px solid #fff; */
+}
+
+.mainVisual .mainSlide .slick-dots>li.slick-active {
+    background: #333;
+}
+
+.mainVisual .mainSlide .slick-dots>li button {
+    display: none;
+}
+
+.mainVisual .mainSlide h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0 0 150px 0;
+    text-shadow: 0 0 3px #000;
+    color: #fff;
+
+}
+
+.mainVisual .mainSlide .inner a {
+    display: inline-block;
+    margin: 0 0 50px 0;
+    padding: 10px 20px;
+    background: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -300%);
+
+}
+
+.mainVisual .mainSlide .inner a:hover {
+    border: 2px solid #bababa;
+}
+
+.subVisual {
+    padding: 100px 0;
+}
+
+.subVisual h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+.subVisual .container {
+    position: relative;
+
+    background: url() no-repeat center center/cover;
+}
+
+
+.subVisual .inner {
+
+    width: 1200px;
+}
+
+.subVisual .inner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subVisual .inner .pzero_txt {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 2px #000;
+}
+
+.subVisual .inner .pzero_txt p {
+    font-size: 20px;
+    line-height: 2;
+}
+
+
+
+
+.mainContent .tireImg img {
+    height: 200px;
+}
+
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+.mainContent p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    color: #333;
+    text-align: center;
+}
+
+.mainContent .inner {
+    display: flex;
+    gap: 30px;
+
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.mainContent .tireImg {
+    position: relative;
+    background-color: #131313;
+
+}
+
+.mainContent .inner figure {
+    flex: 1;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.mainContent .inner figure img {
+    transition: 0.7s
+}
+
+.mainContent .inner figure:hover img {
+    transform: scale(1.1);
+}
+
+
+.mainContent .inner article {
+    position: relative;
+    margin: 10px 0 100px 0;
+}
+
+.mainContent .inner article h3 {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f9f9f9;
+    text-shadow: 0 0 3px #000;
+    margin: 10px 0 10px 0;
+
+    top: 10%;
+    left: 10%;
+}
+
+.mainContent .inner article button {
+    position: absolute;
+    color: #f9f9f9;
+    font-size: 12px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background: #333;
+    padding: 10px 10px;
+
+    bottom: 50%;
+    left: 10%;
+    transform: translate(0, 230%);
+
+}
+
+
+.mainProduct {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.mainProduct h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+.mainProduct p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    color: #333;
+    text-align: center;
+}
+
+.mainProduct .inner {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.mainProduct figure {
+    padding: 0 15px 20px 15px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.mainProduct figure img {
+    width: 100%;
+    transition: 0.7s
+}
+
+.mainProduct figure:hover img {
+    transform: scale(1.05);
+}
+
+.mainProduct .main_pro_slide {
+    margin: 0 -15px;
+}
+
+.mainProduct .arrows a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 37px;
+    height: 75px;
+
+    font-size: 0;
+}
+
+.mainProduct .main_pro_slide .slick-arrow {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    background: none;
+    border: none;
+    font-size: 0;
+
+    width: 50px;
+    height: 50px;
+
+    border-top: 2px solid #1e1d1d;
+    border-left: 2px solid #1e1d1d;
+}
+
+.mainProduct .main_pro_slide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -700px;
+}
+
+.mainProduct .main_pro_slide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+
+}
+
+.mainProduct .img_box {
+    margin: 0 0 15px 0;
+    overflow: hidden;
+}
+
+.mainProduct .slick-dots {
+    margin: 20px 0 0 0;
+}
+
+.mainProduct .slick-dots li {
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+.mainProduct strong {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    color: #333;
+    text-align: center;
+}
+
+.mainProduct .slick-dots button {
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+    border-spacing: 10px;
+    background: #787878;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.mainProduct .slick-dots button:hover {
+
+    background: #131313;
+}
+
+
+
+
+
+
+
+
+.subContent {
+    padding: 100px 0;
+}
+
+.subContent h3 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+.subContent p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    color: #333;
+    text-align: center;
+}
+
+.subContent .container {
+    background: #f9f9f9;
+}
+
+.subContent .inner {
+    display: flex;
+    gap: 30px;
+
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subContent .tireImg {
+    position: relative;
+    /* background-color: #131313; */
+}
+
+.subContent .inner figure {
+    margin: 0 auto;
+}
+
+.subContent .inner img {
+    flex: 1;
+    width: 100%;
+
+}
+
+.subContent .inner article {
+    position: relative;
+    margin: 10px 0 100px 0;
+}
+
+.subContent .inner article h4 {
+    position: absolute;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    /* text-shadow: 0 0 3px #000; */
+    margin: 10px 0 10px 0;
+
+    top: 10%;
+    left: 0%;
+}
+
+.subContent .inner article p {
+    position: absolute;
+    font-size: 11px;
+    font-weight: 300;
+    color: #333;
+    /* text-shadow: 0 0 3px #000; */
+    margin: 35px 0;
+    text-align: left;
+    top: 10%;
+    left: 0%;
+}
+
+.subContent .inner article a {
+    position: absolute;
+    color: #f9f9f9;
+    font-size: 12px;
+    /* border: 1px solid #999; */
+    box-sizing: border-box;
+    background: #9d9d9d;
+    padding: 10px 10px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(190%, -131%);
+}
+
+.subContent .inner article a:hover {
+    background: #919191;
+}
+
+.footer {
+    background: #383838;
+    color: #f8f1fa;
+    /* padding: 0 0 50px 0; */
+}
+
+.footer .top {
+    line-height: 80px;
+    border-bottom: 1px solid #555;
+}
+
+.footer .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .top .left {
+    font-size: 0;
+}
+
+.footer .top .left li {
+    display: inline-block;
+    font-size: 15px;
+
+}
+
+.footer .top .left li~li::before {
+    content: "";
+    margin: 0 20px;
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: #ddd;
+}
+
+.footer .top .right {
+    display: flex;
+}
+
+.footer .top .right i {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.footer .bottom {
+    line-height: 30px;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0em
+}
+
+.footer .bottom p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#f_link {
+    border: none;
+    outline: none;
+
+    padding: 5px 20px;
+    background: #383838;
+    border: 1px solid #555;
+}
