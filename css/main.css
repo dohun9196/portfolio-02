@@ -1,5 +1,9 @@
 * {
-    outline: 1px solid #00f;
+    /* outline: 1px solid #00f; */
+}
+
+.Wrap {
+    background: #333;
 }
 
 .slick-track,
@@ -7,14 +11,21 @@
     transition-delay: 0.03s;
 }
 
-.header h1 {
-    font-size: 0;
-    /* margin: auto; */
+/* header Start */
+.header {
+    background: #ddd;
+    border-bottom: 1px solid #1c20f0;
 }
 
-/* .header .inner img {
-    height: 100%;
-} */
+.header h1 {
+    display: inline-block;
+    font-size: 0;
+}
+
+.header img {
+    width: 200px;
+    object-fit: cover;
+}
 
 .header .inner {
     display: flex;
@@ -22,8 +33,8 @@
     width: 1200px;
     margin: 0 auto;
     line-height: 100px;
-    background: #fefefe;
 }
+
 
 .header .gnb {
     margin: 0 100px;
@@ -41,8 +52,13 @@
 
 }
 
-.header .gnb>ul>li a:hover {
+.header .gnb>ul>li a {
     color: #000;
+    font-weight: 500;
+}
+
+.header .gnb>ul>li a:hover {
+    color: #303030;
     font-weight: 500;
 }
 
@@ -55,61 +71,54 @@
 
     width: 1px;
     height: 12px;
-    background: #999;
+    background: #1d1d1d;
 }
 
-.header .gnb>ul>a {
-    display: block;
+.header .counting {
+    display: flex;
 }
 
 .header .right {
-    position: relative;
-    margin: 0 0 0 auto;
+    margin: 0 auto;
 }
 
-.header .right input {
-    width: 0 auto;
-    border: 1px solid #bbb;
-    border-radius: 8px;
-    padding: 10px 12px;
-    font-size: 14px;
+.header .right i {
+    color: #000;
+    font-size: 20px;
 }
 
-.header .right .xi-search {
-    position: absolute;
-    top: 40%;
-    left: 80%;
-    transform: translate(0, 10%);
+.header .right i:hover {
+    color: #1d1d1d;
+    font-size: 20px;
 }
 
-/* .header .right a {
-    margin: 0 0 0 auto;
-} */
+/* header Finish */
+
+
+/* main Start */
+.mainVisual {
+    /* padding: 0 0 100px 0; */
+}
 
 .mainVisual .mainSlide figure {
     position: relative;
-    height: 600px;
+    height: 800px;
+    /* background-size: 100% 100% */
 }
 
 .mainVisual .mainSlide .slide01 {
-    background: url(../img/main_slider01.jpg) no-repeat center center/cover;
+    background: url(../img/slider01.jpg) no-repeat center center/cover;
+
 }
 
 .mainVisual .mainSlide .slide02 {
-    background: url(../img/main_slider03.jpg) no-repeat center center/cover;
+    background: url(../img/slider02.jpg) no-repeat center center/cover;
+
 }
 
 .mainVisual .mainSlide .slide03 {
-    background: url(../img/main_slider02.jpg) no-repeat center center/cover;
-}
+    background: url(../img/slider03.jpg) no-repeat center center/cover;
 
-.mainVisual .mainSlide .inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 1200px;
 }
 
 .mainVisual .mainSlide .slick-dots {
@@ -126,42 +135,59 @@
     background: #f9f9f9;
     margin: 0 10px;
     /* border-radius: 10%; */
-    /* border: 2px solid #fff; */
+
 }
 
 .mainVisual .mainSlide .slick-dots>li.slick-active {
-    background: #333;
+    background: #F01C24;
 }
 
 .mainVisual .mainSlide .slick-dots>li button {
     display: none;
 }
 
+.mainVisual .mainSlide .content {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1200px;
+}
+
 .mainVisual .mainSlide h2 {
     font-size: 50px;
     font-weight: 500;
-    margin: 0 0 150px 0;
-    text-shadow: 0 0 3px #000;
+    text-shadow: 0 0 3px #333;
+    line-height: 80px;
     color: #fff;
+}
+
+.mainVisual .mainSlide .h2 {
+    margin: 0 0 100px 0;
+}
+
+.mainVisual .xi-angle-down {
+    position: absolute;
+    top: 80%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 30px;
+    background-color: #f9f9f9;
+
 
 }
 
-.mainVisual .mainSlide .inner a {
-    display: inline-block;
-    margin: 0 0 50px 0;
-    padding: 10px 20px;
-    background: none;
-    color: #fff;
-    text-transform: uppercase;
-    border: 2px solid #fff;
-    top: 50%;
+.mainVisual .xi-angle-down:hover {
+    position: absolute;
+    top: 85%;
     left: 50%;
-    transform: translate(0, -300%);
+    transition: 5s;
+    transform: translate(-50%, -50%);
+    color: #ddd;
+    font-size: 30px;
 
-}
-
-.mainVisual .mainSlide .inner a:hover {
-    border: 2px solid #bababa;
 }
 
 .subVisual {
@@ -169,50 +195,36 @@
 }
 
 .subVisual h2 {
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 700;
     margin: 0 0 20px 0;
-    color: #333;
-    text-align: center;
-}
-
-.subVisual .container {
-    position: relative;
-
-    background: url() no-repeat center center/cover;
-}
-
-
-.subVisual .inner {
-
-    width: 1200px;
-}
-
-.subVisual .inner img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.subVisual .inner .pzero_txt {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    font-size: 15px;
-    font-weight: 500;
-    margin: 0 0 30px 0;
     color: #fff;
     text-align: center;
-    text-shadow: 0 0 2px #000;
 }
 
-.subVisual .inner .pzero_txt p {
-    font-size: 20px;
-    line-height: 2;
+.subVisual p {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-align: center;
 }
 
+.subVisual .container {}
+
+.subVisual .container p {}
+
+.subVisual .container .White {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.subVisual .container .White figure {
+    flex: 1;
+}
 
 
 
@@ -228,7 +240,7 @@
     font-size: 50px;
     font-weight: 700;
     margin: 0 0 20px 0;
-    color: #333;
+    color: #fff;
     text-align: center;
 }
 
@@ -236,74 +248,9 @@
     font-size: 20px;
     font-weight: 500;
     margin: 0 0 30px 0;
-    color: #333;
+    color: #fff;
     text-align: center;
 }
-
-.mainContent .inner {
-    display: flex;
-    gap: 30px;
-
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-
-}
-
-.mainContent .tireImg {
-    position: relative;
-    background-color: #131313;
-
-}
-
-.mainContent .inner figure {
-    flex: 1;
-    margin: 0 auto;
-    overflow: hidden;
-
-}
-
-.mainContent .inner figure img {
-    transition: 0.7s
-}
-
-.mainContent .inner figure:hover img {
-    transform: scale(1.1);
-}
-
-
-.mainContent .inner article {
-    position: relative;
-    margin: 10px 0 100px 0;
-}
-
-.mainContent .inner article h3 {
-    position: absolute;
-    font-size: 20px;
-    font-weight: 700;
-    color: #f9f9f9;
-    text-shadow: 0 0 3px #000;
-    margin: 10px 0 10px 0;
-
-    top: 10%;
-    left: 10%;
-}
-
-.mainContent .inner article button {
-    position: absolute;
-    color: #f9f9f9;
-    font-size: 12px;
-    border: 1px solid #999;
-    box-sizing: border-box;
-    background: #333;
-    padding: 10px 10px;
-
-    bottom: 50%;
-    left: 10%;
-    transform: translate(0, 230%);
-
-}
-
 
 .mainProduct {
     position: relative;
