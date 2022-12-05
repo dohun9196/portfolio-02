@@ -29,6 +29,7 @@
 
 .header .inner {
     display: flex;
+
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
@@ -96,13 +97,12 @@
 
 
 /* main Start */
-.mainVisual {
-    /* padding: 0 0 100px 0; */
-}
+.mainVisual {}
 
 .mainVisual .mainSlide figure {
     position: relative;
     height: 800px;
+    z-index: 1;
     /* background-size: 100% 100% */
 }
 
@@ -158,73 +158,205 @@
 .mainVisual .mainSlide h2 {
     font-size: 50px;
     font-weight: 500;
-    text-shadow: 0 0 3px #333;
+    text-shadow: 0 0 2px #ddd;
     line-height: 80px;
-    color: #fff;
+    color: #000;
 }
 
 .mainVisual .mainSlide .h2 {
     margin: 0 0 100px 0;
 }
 
-.mainVisual .xi-angle-down {
-    position: absolute;
-    top: 80%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-    color: #333;
-    font-size: 30px;
-    background-color: #f9f9f9;
-
-
-}
-
-.mainVisual .xi-angle-down:hover {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transition: 5s;
-    transform: translate(-50%, -50%);
-    color: #ddd;
-    font-size: 30px;
-
-}
-
-.subVisual {
-    padding: 100px 0;
-}
-
-.subVisual h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-    color: #fff;
-    text-align: center;
-}
-
-.subVisual p {
-    font-size: 15px;
-    font-weight: 500;
-    margin: 0 0 20px 0;
-    color: #fff;
-    text-align: center;
-}
-
-.subVisual .container {}
-
-.subVisual .container p {}
-
-.subVisual .container .White {
-    display: flex;
-    gap: 30px;
+.mainVisual .con {
+    position: relative;
     width: 1200px;
     margin: 0 auto;
 
 }
 
-.subVisual .container .White figure {
-    flex: 1;
+.mainVisual .xi-arrow-bottom {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translate(-50%, -100%);
+
+    /* background-color: #555; */
+    color: #fff;
+    font-size: 30px;
+
+    /* border: 1px solid #fff; */
+    /* border-radius: 50%; */
 }
+
+
+
+.subVisual {
+    padding: 100px 0;
+    background: #000;
+}
+
+.subVisual .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    height: 200px;
+}
+
+.subVisual .box {
+    position: absolute;
+    width: 1200px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.subVisual .box h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+.subVisual .box p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 0 30px 0;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.subVisual .box a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    background: #333;
+
+}
+
+.subVisual .box a:hover {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid#fff;
+}
+
+.subVisual .box .click_P {
+    font-size: 10px;
+    font-weight: 300;
+    margin: -10px 0 0 0;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.subVisual .main_img {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.subVisual .main_img figure {
+    position: relative;
+}
+
+.subVisual .main_img .plus01 {
+    position: absolute;
+    top: 200px;
+    left: 235px;
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    color: #cac9c9;
+    border: 2px solid #fff;
+    border-radius: 20%;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.subVisual .main_img .plus02 {
+    position: absolute;
+    top: 300px;
+    left: 655px;
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    color: #cac9c9;
+    border: 2px solid #fff;
+    border-radius: 20%;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.subVisual .main_img .plus03 {
+    position: absolute;
+    top: 200px;
+    right: 135px;
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    color: #cac9c9;
+    border: 2px solid #fff;
+    border-radius: 20%;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.subVisual .main_img .select01 {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.subVisual .main_img .select02 {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.subVisual .main_img .select03 {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.subVisual .main_img p {
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.subVisual .main_img i {
+    position: absolute;
+    top: 370px;
+    right: 0;
+    font-size: 20px;
+    transform: translate(-50%, -30%);
+}
+
+
+
+
+
 
 
 

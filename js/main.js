@@ -29,13 +29,28 @@ $(function () {
         $('.main_pro_slide').slick('slickNext')
     });
 
-    $('#f_link').on('change', function () {
-        console.log('change', $(this).val());
-        var link = $(this).val();
+    $(".plus01").click(function () {
+        $('.select01').show();
+    });
 
-        if (link) {
-            window.open(link)
-        }
-    })
+    $(".xi-close").click(function () {
+        $('.select01').hide();
+    });
 
+    $(".plus02").click(function () {
+        $('.select02').show();
+    });
+
+    $(".xi-close").click(function () {
+        $('.select02').hide();
+    });
+
+    $(".plus03").click(function () {
+        $('.select03').show();
+    });
+
+    $(".xi-close").click(function () {
+        $('.select03').hide();
+    });
 });
+
