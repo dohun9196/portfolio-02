@@ -6,7 +6,7 @@ $(function () {
     // mainSlide
     $('.mainSlide').slick({
         dots: true,
-        autoplay: false,
+        autoplay: true,
         arrows: true,
         autoplaySpeed: 2000,
         pasueOnHover: false,
@@ -16,9 +16,9 @@ $(function () {
     });
 
     $('.main_pro_slide').slick({
-        arrows: true,
+        arrows: false,
         dots: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
     });
 
     $('.mainProduct .arrows .prev').on('click', function () {
@@ -28,7 +28,7 @@ $(function () {
     $('.mainProduct .arrows .next').on('click', function () {
         $('.main_pro_slide').slick('slickNext')
     });
-
+    // main img1
     $(".plus01").click(function () {
         $('.select01').show();
     });
@@ -51,6 +51,31 @@ $(function () {
 
     $(".xi-close").click(function () {
         $('.select03').hide();
+    });
+
+    // main img2
+    $(".plus04").click(function () {
+        $('.select04').show();
+    });
+
+    $(".xi-close").click(function () {
+        $('.select04').hide();
+    });
+
+    $(".plus05").click(function () {
+        $('.select05').show();
+    });
+
+    $(".xi-close").click(function () {
+        $('.select05').hide();
+    });
+
+    $(".plus06").click(function () {
+        $('.select06').show();
+    });
+
+    $(".xi-close").click(function () {
+        $('.select06').hide();
     });
 });
 
