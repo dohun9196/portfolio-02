@@ -127,7 +127,7 @@
 }
 
 .header .bottom ul {
-    float: ;
+    float: 1;
 }
 
 .header .bottom li {
@@ -705,99 +705,125 @@
 
 /* main img2 } */
 
-.mainProduct {
-    position: relative;
+.car_color {
+    display: block;
     padding: 100px 0;
     text-align: center;
     background: #fff;
 }
 
-.mainProduct h2 {
+.car_color h2 {
     font-size: 50px;
     font-weight: 700;
     margin: 0 0 20px 0;
     color: #000;
+
     text-align: center;
 }
 
-.mainProduct p {
+.car_color p {
     font-size: 20px;
     font-weight: 500;
     margin: 0 0 30px 0;
-    color: #000;
+    color: #333;
     text-align: center;
 }
 
-.mainProduct .mainContent {
-    padding: 100px 0;
-
-}
-
-.mainProduct .mainContent h2 {
-    font-size: 50px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-    color: #000;
-    text-align: center;
-}
-
-.mainProduct .mainContent p {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0 0 30px 0;
-    color: #000;
-    text-align: center;
-}
-
-.mainProduct .inner {
+.car_color .container {
+    display: block;
     width: 1200px;
-}
-
-.inner .slick-track {
-    width: 100%;
-}
-
-.mainProduct .inner figure {
-    width: 100%;
-
-}
-
-.mainProduct .inner figure img {
+    height: 440px;
     margin: 0 auto;
+
 }
 
-
-.mainProduct .img_box {
-    margin: 0 0 15px 0;
-    overflow: hidden;
+.car_color .container .main_car {
+    position: relative;
 }
 
-.mainProduct .slick-dots {
-    margin: 20px 0 0 0;
+.car_color .container .main_car figure {
+    position: absolute;
+    width: 1200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
-.mainProduct .slick-dots li {
-    display: inline-block;
-    margin: 0 10px;
+.car_color .container .main_car p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    color: #000;
+    text-align: center;
 }
 
-.mainProduct .slick-dots button {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #fff;
+.car_color_bottom .inner {
+    margin-top: 30px;
+}
+
+.car_color_bottom .inner>ul {
+    display: flex;
+    gap: 30px;
+    width: 900px;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.car_color_bottom .inner>ul>li {
+    position: relative;
+
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    border-spacing: 10px;
-    background: #787878;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    font-size: 0;
-
+    text-align: center;
+    line-height: 0px;
+    border: 1px solid #c4c4c4;
 }
 
-.mainProduct .slick-dots button:hover {
 
-    background: #131313;
+.car_color_bottom .inner>ul>li:active {
+    opacity: 0.5;
+}
+
+.click01 {
+    background: #760609;
+}
+
+.click02 {
+    background: #fa6c01;
+}
+
+.click03 {
+    background: #008dcd;
+}
+
+.click04 {
+    background: #feff0b;
+}
+
+.click05 {
+    background: #575757;
+}
+
+.click06 {
+    background: #9798a1;
+}
+
+.click07 {
+    background: #cfcfcf;
+}
+
+.click08 {
+    background: #254c71;
+}
+
+.click09 {
+    background: #f65251;
+}
+
+.click10 {
+    background: #ebebeb;
 }
 
 
