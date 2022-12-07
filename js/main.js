@@ -78,43 +78,43 @@ $(function () {
 $(function () {
     $(".click01").click(function (e) {
         e.preventDefault();
-        $(".img-itm").attr("src", "/img/color01.jpg");
+        $(".img-itm").attr("src", "./img/color01.jpg");
     });
     $(".click02").click(function (e) {
         e.preventDefault();
-        $(".img-itm").attr("src", "/img/color02.jpg");
+        $(".img-itm").attr("src", "./img/color02.jpg");
     });
     $(".click03").click(function (e) {
         e.preventDefault();
-        $(".img-itm").attr("src", "/img/color03.jpg");
+        $(".img-itm").attr("src", "./img/color03.jpg");
     });
     $(".click04").click(function (e) {
         e.preventDefault();
-        $(".img-itm").attr("src", "/img/color04.jpg");
+        $(".img-itm").attr("src", "./img/color04.jpg");
     });
     $(".click05").click(function (e) {
         e.preventDefault();
-        $(".img-itm").attr("src", "/img/color05.jpg");
+        $(".img-itm").attr("src", "./img/color05.jpg");
     });
     $(".click06").click(function (e) {
         e.preventDefault();
-        $(".img-itm").attr("src", "/img/color06.jpg");
+        $(".img-itm").attr("src", "./img/color06.jpg");
     });
     $(".click07").click(function (e) {
         e.preventDefault();
-        $(".img-itm").attr("src", "/img/color07.jpg");
+        $(".img-itm").attr("src", "./img/color07.jpg");
     });
     $(".click08").click(function (e) {
         e.preventDefault();
-        $(".img-itm").attr("src", "/img/color08.jpg");
+        $(".img-itm").attr("src", "./img/color08.jpg");
     });
     $(".click09").click(function (e) {
         e.preventDefault();
-        $(".img-itm").attr("src", "/img/color09.jpg");
+        $(".img-itm").attr("src", "./img/color09.jpg");
     });
     $(".click10").click(function (e) {
         e.preventDefault();
-        $(".img-itm").attr("src", "/img/color10.jpg");
+        $(".img-itm").attr("src", "./img/color10.jpg");
     });
 
 
