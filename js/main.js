@@ -1,18 +1,20 @@
 $(function () {
-    // topBanner
+
     $('.topBanner i').on('click', function () {
         $('.topBanner').addClass('on')
     });
-    // mainSlide
+
     $('.mainSlide').slick({
         dots: true,
         autoplay: true,
         arrows: true,
+        speed: 1000,
         autoplaySpeed: 2000,
-        pasueOnHover: false,
-        pasueOnFocus: false,
+        pauseOnHover: true,
+        pauseOnFocus: false,
         prevArrow: false,
         nextArrow: false,
+
     });
 
     // main img1
@@ -115,6 +117,7 @@ $(function () {
     $(".click10").click(function (e) {
         e.preventDefault();
         $(".img-itm").attr("src", "./img/color10.jpg");
+
     });
 
 
