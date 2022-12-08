@@ -115,7 +115,12 @@
     background: #787878;
     width: 210px;
     padding: 0 5px;
+}
 
+.header .bottom span {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 20px
 }
 
 .header .bottom .bar_inner {
@@ -126,9 +131,9 @@
 
 }
 
-.header .bottom ul {
-    float: 1;
-}
+/* .header .bottom ul {
+    flex: 1;
+} */
 
 .header .bottom li {
     list-style: none;
@@ -222,17 +227,16 @@
     height: 210px;
 }
 
-.bar_inner .xi-arrow-down {
-    margin: 0 0 0 10px;
+.bar_inner a .xi-arrow-down {
+    background: #5a5a5a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+
 }
-
-
-
-
-
-
-
-
 
 /* header Finish */
 
@@ -249,7 +253,7 @@
 
 .mainVisual .mainSlide .slide01 {
     background: url(../img/slider01.jpg) no-repeat center center/cover;
-
+    background-position-y: -300px;
 }
 
 .mainVisual .mainSlide .slide02 {
@@ -299,15 +303,15 @@
 }
 
 .mainVisual .mainSlide h2 {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 45px;
+    font-weight: 700;
     text-shadow: 0 0 5px #333;
     line-height: 50px;
     color: #fff;
 }
 
 .mainVisual .mainSlide h2 {
-    margin: 0 0 100px 0;
+    margin: 0 0 50px 0;
 }
 
 .mainVisual .con {
@@ -588,6 +592,13 @@
     right: 0;
     font-size: 20px;
     transform: translate(-50%, -30%);
+    border: 1px solid #bbb;
+}
+
+.subVisual .main_img i:hover {
+    background: #ccc;
+    border: 1px solid #bbb;
+    color: #fff;
 }
 
 /* mian img1 } */
@@ -708,7 +719,7 @@
 /* main img2 } */
 .price {
     background: #fff;
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
 }
 
 .price h2 {
@@ -932,7 +943,7 @@
 
 .footer {
     color: #f8f1fa;
-    padding: 50px 0;
+    padding: 0px 0;
 }
 
 .footer .top {
@@ -941,10 +952,12 @@
 }
 
 .footer .inner {
+    position: relative;
+    display: flex;
     width: 1200px;
     margin: 0 auto;
     padding: 0 0 50px 0;
-    display: flex;
+
     gap: 60px;
     justify-content: space-between;
 }
@@ -965,25 +978,45 @@
     margin: 0 0 0 10px;
 }
 
-.footer .inner .icon {
+.footer .icon {
     display: flex;
-    position: relative;
-    gap: 30px;
     padding: 50px 0;
+    top: 10%;
+    right: 0;
 
 
 }
 
-.footer .inner .icon i {
+.footer .icon .con {
+    display: flex;
+    gap: 10px;
 
-    font-size: 20px;
+}
+
+.footer .icon .con i {
+    background: #333;
+    font-size: 25px;
     text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 1.5;
 }
 
 .footer .footer_bottom {
     width: 1200px;
     margin: 0 auto;
+    height: 50px;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 50px;
+    letter-spacing: 2px;
 }
+
+
+
 
 
 
