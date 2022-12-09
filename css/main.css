@@ -700,6 +700,12 @@
     display: none;
 }
 
+.subVisual .main_img2 .select04 img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
 .subVisual .main_img2 .select05 {
     position: absolute;
     width: 700px;
@@ -710,6 +716,12 @@
     display: none;
 }
 
+.subVisual .main_img2 .select05 img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
 .subVisual .main_img2 .select06 {
     position: absolute;
     width: 700px;
@@ -718,6 +730,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+}
+
+.subVisual .main_img2 .select06 img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
 .subVisual .main_img2 p {
