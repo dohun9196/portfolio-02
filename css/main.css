@@ -756,7 +756,7 @@
 /* main img2 } */
 .price {
     background: #fff;
-    padding: 100px 0 50px 0;
+    padding: 100px 0;
 }
 
 .price h2 {
@@ -806,7 +806,7 @@
 
 .car_color {
 
-    padding: 0 0 100px 0;
+    padding: 100px 0;
     text-align: center;
     background: #fff;
 }
