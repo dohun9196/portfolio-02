@@ -317,8 +317,8 @@
 .mainVisual .con {
     position: absolute;
     bottom: 10%;
-    right: 14%;
-    transform: translate(0%, 30%);
+    right: 15%;
+    transform: translate(-100%, 30%);
 }
 
 .mainVisual .xi-arrow-bottom {
