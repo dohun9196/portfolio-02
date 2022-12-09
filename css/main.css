@@ -14,7 +14,7 @@
 /* header Start */
 .header {
     background: #ddd;
-    border-bottom: 1px solid #1c20f0;
+    /* border-bottom: 1px solid #1c20f0; */
 }
 
 .header h1 {
@@ -242,18 +242,20 @@
 
 
 /* main Start */
-.mainVisual {}
+.mainVisual {
+    position: relative;
+}
 
 .mainVisual .mainSlide figure {
     position: relative;
-    height: 80vh;
+    height: 90vh;
     z-index: 1;
     /* background-size: 100% 100% */
 }
 
 .mainVisual .mainSlide .slide01 {
     background: url(../img/slider01.jpg) no-repeat center center/cover;
-    background-position-y: -300px;
+
 }
 
 .mainVisual .mainSlide .slide02 {
@@ -270,14 +272,14 @@
 
 .mainVisual .mainSlide .slick-dots {
     position: absolute;
-    bottom: 0%;
+    bottom: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 90%);
 }
 
 .mainVisual .mainSlide .slick-dots>li {
     display: inline-block;
-    width: 100px;
+    width: 200px;
     height: 10px;
     background: #f9f9f9;
     margin: 0 10px;
@@ -295,51 +297,40 @@
 
 .mainVisual .mainSlide .content {
     position: absolute;
-    top: 90%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 60%);
     width: 1200px;
 
 }
 
-.mainVisual .mainSlide h2 {
+.mainVisual .content h2 {
     font-size: 45px;
     font-weight: 700;
     text-shadow: 0 0 5px #333;
-    line-height: 50px;
+    line-height: 70px;
     color: #fff;
-}
 
-.mainVisual .mainSlide h2 {
-    margin: 0 0 50px 0;
+
 }
 
 .mainVisual .con {
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
-
+    position: absolute;
+    bottom: 10%;
+    right: 14%;
+    transform: translate(0%, 30%);
 }
 
 .mainVisual .xi-arrow-bottom {
-    position: absolute;
-    bottom: 0%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-
-    /* background-color: #555; */
     color: #fff;
     font-size: 50px;
-
-    /* border: 1px solid #fff; */
-    /* border-radius: 50%; */
 }
 
 
 
 
 .subVisual {
-    padding: 100px 0;
+    padding: 100px 0 100px 0;
     background: #000;
 }
 
@@ -347,29 +338,34 @@
     position: relative;
     width: 1200px;
     margin: 0 auto;
-    height: 220px;
+    height: 250px;
+
 }
 
 .subVisual .container02 {
     position: relative;
     width: 1200px;
     margin: 0 auto;
-    height: 220px;
+    height: 250px;
+    margin-top: 150px;
 }
 
 .subVisual .container03 {
     position: relative;
     width: 1200px;
-
     margin: 0 auto;
-    text-align: left;
+    height: 250px;
+    margin-top: 150px;
 }
 
 .subVisual .container04 {
     position: relative;
     width: 1200px;
     margin: 0 auto;
-    height: 220px;
+    margin-top: 150px;
+    background: url(../img/main-img03.jpg);
+    height: 440px;
+    margin-bottom: 50px;
 
 }
 
@@ -377,6 +373,7 @@
 
 .subVisual .box {
     position: absolute;
+    display: block;
     width: 1200px;
     top: 0%;
     left: 50%;
@@ -384,7 +381,7 @@
 }
 
 .subVisual .box h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     margin: 0 0 20px 0;
     color: #fff;
@@ -393,34 +390,37 @@
 }
 
 .subVisual .box p {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 20px;
     margin: 0 0 30px 0;
-    line-height: 25px;
+    line-height: 30px;
     color: #fff;
     text-align: center;
 }
+
+
 
 .subVisual .box a {
     font-size: 20px;
     font-weight: 500;
     color: #fff;
-    padding: 10px;
+    padding: 10px 40px;
     background: #333;
+    text-align: center;
 }
 
 .subVisual .box a:hover {
     font-size: 20px;
     font-weight: 500;
     color: #000;
-    padding: 10px;
+    padding: 10px 40px;
     background: #fff;
     border: 1px solid#fff;
 }
 
 .subVisual .box .p01 {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 300;
     /* margin: -10px 0 0 0; */
     line-height: 25px;
@@ -429,43 +429,43 @@
 }
 
 .subVisual .box .p02 {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 300;
-    /* margin: -10px 0 0 0; */
-    line-height: 25px;
+    margin: 10px 0;
+    line-height: 20px;
     color: #fff;
     text-align: center;
 }
 
-.subVisual .container03 .box3 {
-    background: url(../img/main-img03.jpg);
-    height: 440px;
-    margin-bottom: 50px;
-
+.subVisual .container04 .box04 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
 }
 
-.subVisual .box3 h2 {
-    font-size: 30px;
+.subVisual .box04 h2 {
+    font-size: 40px;
     font-weight: 700;
     margin: 0 0 20px 0;
-    padding: 50px 0 0 200px;
+    /* padding: 50px 0 0 200px; */
     color: #fff;
     text-align: left;
 
 }
 
-.subVisual .box3 p {
+.subVisual .box04 p {
     font-size: 20px;
     font-weight: 300;
     line-height: 20px;
     margin: 0 0 30px 0;
-    padding: 10px 0 0 200px;
-    line-height: 25px;
+    /* padding: 10px 0 0 200px; */
+    line-height: 30px;
     color: #fff;
     text-align: left;
 }
 
-.subVisual .box3 a {
+.subVisual .box04 a {
     font-size: 20px;
     font-weight: 500;
     color: #fff;
@@ -473,7 +473,7 @@
     background: #333;
 }
 
-.subVisual .box3 a:hover {
+.subVisual .box04 a:hover {
     font-size: 20px;
     font-weight: 500;
     color: #000;
@@ -487,7 +487,7 @@
     display: block;
     width: 1200px;
     margin: 0 auto;
-    margin-bottom: 50px;
+
 }
 
 .subVisual .main_img figure {
@@ -547,6 +547,13 @@
     line-height: 27px;
     background: #fff;
     opacity: 0.9;
+}
+
+.subVisual .main_img a:hover {
+    color: #fff;
+    background: #333;
+    transition: 0.7s;
+
 }
 
 .subVisual .main_img .select01 {
@@ -617,11 +624,17 @@
     position: relative;
 }
 
+.subVisual .main_img2 figure img {
+    max-width: inherit;
+    width: 1200px;
+    height: 500px;
+}
+
 .subVisual .main_img2 .plus04 {
     position: absolute;
     top: 200px;
     left: 330px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 100%);
 
     font-size: 30px;
     color: #333;
@@ -639,7 +652,7 @@
     position: absolute;
     top: 100px;
     left: 600px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
 
     font-size: 30px;
     color: #333;
@@ -657,7 +670,7 @@
     position: absolute;
     top: 200px;
     right: 220px;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, -50%);
 
     font-size: 30px;
     color: #333;
@@ -669,6 +682,12 @@
     line-height: 27px;
     background: #fff;
     opacity: 0.9;
+}
+
+.subVisual .main_img2 a:hover {
+    color: #fff;
+    background: #333;
+    transition: 0.7s;
 }
 
 .subVisual .main_img2 .select04 {
@@ -900,6 +919,11 @@
 
 }
 
+.gallery {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .gallery h2 {
     font-size: 50px;
     font-weight: 700;
@@ -908,18 +932,18 @@
     text-align: center;
 }
 
-.gallery .container {
-
-    width: 1200px;
-    margin: 0 auto;
+.gallery p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-align: right;
 }
 
 .gallery .container figure {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-
 }
 
 .gallery .container figure img {
@@ -932,7 +956,7 @@
 }
 
 .gallery .container .gallery_hover img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1s;
 }
 

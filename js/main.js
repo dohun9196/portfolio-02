@@ -6,7 +6,7 @@ $(function () {
 
     $('.mainSlide').slick({
         dots: true,
-        autoplay: true,
+        autoplay: false,
         arrows: true,
         speed: 1000,
         autoplaySpeed: 2000,
